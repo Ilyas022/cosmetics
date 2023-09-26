@@ -4,8 +4,6 @@ export const useForm = (steps: ReactElement[]) => {
   const [step, setStep] = useState<number>(0)
 
   const nextStep = () => {
-    console.log('1111')
-
     setStep((prev) => {
       if (prev >= steps.length - 1) {
         return prev
